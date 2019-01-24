@@ -20,6 +20,8 @@ def getenv(key, default=None, required=False, split=False):
 #
 DEBUG = getenv('DEBUG', True)
 
+SECRET_KEY = 'test-demo'
+
 ADMINS = getenv('ADMINS', split=True)
 MANAGERS = ADMINS
 
