@@ -6,7 +6,7 @@ services:
     image: postgres
     command: postgres -p ${DRC_DB_PORT:-5440}
     expose:
-      - "5440:5440"
+      - 5440:5440
   web:
     build: .
     environment:
