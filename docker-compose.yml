@@ -6,7 +6,7 @@ services:
     image: postgres
     command: postgres -p 5440
     expose:
-      - 5440:5440
+      - 5440
   web:
     build: .
     environment:
