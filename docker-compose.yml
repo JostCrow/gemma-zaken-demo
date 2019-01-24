@@ -5,10 +5,12 @@ services:
   db:
     image: postgres
     command: postgres -p 5440
+    network_mode: host
     expose:
       - 5440
   web:
     build: .
+    network_mode: host
     environment:
       - DJANGO_SETTINGS_MODULE=zac.conf.docker
       - SECRET_KEY=${SECRET_KEY}
